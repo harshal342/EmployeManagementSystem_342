@@ -20,7 +20,10 @@ import com.employee.management.exceptions.EmployeeNotFoundException;
 import com.employee.management.repositories.EmployeeRepository;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:4200", "https://employeemanagementsystem342.netlify.app"})
+@CrossOrigin(origins = {
+    "http://localhost:4200",
+    "https://employee-management-system-chi-three.vercel.app"  // ← Add this privately
+})
 public class EmployeeController {
 	@Autowired
 	private EmployeeRepository employeeRepository;
